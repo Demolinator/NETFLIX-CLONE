@@ -1,0 +1,51 @@
+/* Faq.css */
+.faq-button {
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Add a transition for the button animation */
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .faq-button.cross::before {
+    content: '✕';
+    font-weight: bold;
+  }
+  
+  .faq-button.plus::before {
+    content: '+';
+    font-weight: bold;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease; /* Add a transition for the text color change */
+  }
+  
+  .faq-answer {
+    font-size: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, background-color 0.3s ease; /* Adjust the transition duration for max-height */
+    background-color: rgba(24, 24, 24, 0.7); /* Darker background color */
+    padding: 10px;
+  }
+  
+  li.active .faq-answer {
+    max-height: 500px; /* Adjust the max height for your content */
+  }
+  
+  .space {
+    margin-bottom: 20px;
+  }
+  
